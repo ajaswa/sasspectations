@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.name          = "sasspectations"
   gem.version       = Sasspectations::VERSION
   gem.authors       = ["Andrew Jaswa", "Jesse Trimble"]
-  gem.email         = ["andrew.jaswa@factorylabs.com", "jesse.trimble@factorylabs.com"]
+  gem.email         = ["ajaswa@gmail.com", "jesse.trimble@factorylabs.com"]
   gem.description   = %q{Spec runner for Sass}
   gem.summary       = %q{Spec runner for Sass}
   gem.homepage      = ""

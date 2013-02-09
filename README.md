@@ -1,6 +1,6 @@
 # Sasspectations
 
-TODO: Write a gem description
+Sasspectations is a rspec like spec runner for SCSS.
 
 ## Installation
 
@@ -18,7 +18,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Drop you Sasspectations specs into spec/scss and run:
+
+    $ rake sasspectations:run
+
+Or you can specify a path, for example if you had your specs in examples/spec/scss:
+
+    $ rake sasspectations:run\[examples\]
+
+### Writing Sasspectations Specs
+All Sasspectations specs are written in SCSS.
+
+
+## Acknowledgements/Thanks
+Much thanks to the folks who built [Sassquatch](https://github.com/d-i/Sassquatch), without their inital work this wouldn't have been possiable. Many of their ideas were used in this project.
+
+
 
 ## Contributing
 
