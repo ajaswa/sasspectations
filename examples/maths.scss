@@ -1,0 +1,5 @@
+// Functions we want to test
+
+@function adding-numbers($a, $b) {
+  @return $a + $b;
+}

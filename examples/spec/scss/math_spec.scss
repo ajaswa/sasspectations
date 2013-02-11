@@ -1,0 +1,30 @@
+maths-spec {
+  // import the scss files we want to test.
+  @import "../../maths";
+
+  greater-than {
+    expect: to-greater-than(5,4);
+  }
+
+  less-than {
+    expect: to-less-than(4,5);
+  }
+
+  divisible-by {
+    expect: to-divisible-by(adding-numbers(30,20), 10);
+  }
+
+  to-be-odd {
+    expect: to-be-odd(adding-numbers(6,7));
+  }
+
+  to-be-even {
+    expect: to-be-even(adding-numbers(5,7));
+  }
+
+
+  in-range {
+    expect: to-in-range(5,1,adding-numbers(6,6));
+  }
+
+}

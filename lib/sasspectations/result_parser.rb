@@ -11,7 +11,7 @@ module Sasspectations
     end
 
     def parse
-      spec_lines = @css_output.split("\n")
+      spec_lines = @css_output.split("\n").reject! &:empty?
       @result = spec_lines.map do |spec_line|
         if spec_line =~ /{\s*expect\s?:\s?true[;]?\s?}/
           [".".colorize(:green), spec_line]
