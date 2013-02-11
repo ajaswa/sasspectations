@@ -33,7 +33,6 @@ spec-name {
     }
   }
 
-
   has-text {
     expect: to-contain('pi', 'pixel')
   }
