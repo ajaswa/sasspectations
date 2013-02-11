@@ -1,4 +1,5 @@
 require "sass"
+require "sasspectations_matchers"
 require "colorize"
 
 require "sasspectations/version"
