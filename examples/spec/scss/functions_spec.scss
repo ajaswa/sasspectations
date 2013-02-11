@@ -1,6 +1,8 @@
-@import "../../functions";
-$base-size: 10px;
-spec_name {
+spec-name {
+  // set any variables we need.
+  $base-size: 10px;
+  // import the scss files we want to test.
+  @import "../../functions";
 
   strip-units {
     remove-from-em {
@@ -11,6 +13,9 @@ spec_name {
   to-px {
     basic-conversion {
       expect: to-equal(to-px(1em), 10px);
+    }
+    basic-conversion-not {
+      expect: to-not-equal(to-px(10em), 10px);
     }
   }
 
@@ -23,12 +28,17 @@ spec_name {
       expect: to-equal(to-em(10px, 2em), .5em);
     }
 
-    convert-with-em-context-messy {
-      expect: to-almost-equal(to-em(14px, 3em), .46667em);
-    }
-
     convert-with-px-context {
       expect: to-equal(to-em(10px, 20px), .5em);
     }
+  }
+
+
+  has-text {
+    expect: to-contain('pi', 'pixel')
+  }
+
+  does-not-have-text {
+    expect: to-not-contain('p0', 'pixel')
   }
 }

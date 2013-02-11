@@ -7,7 +7,7 @@ maths-spec {
   }
 
   less-than {
-    expect: to-less-than(4,5);
+    expect: to-less-than(multiply-numbers(50,3),250);
   }
 
   divisible-by {
@@ -15,7 +15,7 @@ maths-spec {
   }
 
   to-be-odd {
-    expect: to-be-odd(adding-numbers(6,7));
+    expect: to-be-odd(adding-numbers(6px,7px));
   }
 
   to-be-even {
