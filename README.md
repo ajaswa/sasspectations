@@ -29,16 +29,32 @@ Or you can specify a path, for example if you had your specs in examples/spec/sc
 ### Writing Sasspectations Specs
 All Sasspectations specs are written in SCSS.
 
+For example if you have a SCSS function that adds two numbers together and wanted to test it you might set something up like this:
 
-## Acknowledgements/Thanks
+add_numbers.scss:
+
+```scss
+@fuction add-numbers( $a, $b ) {
+  @return $a+$b;
+}
+```
+
+add_numbers_spec.scss:
+
+```scss
+spec-for-adding-numbers {
+  @import: 'path/to/add_numbers.scss';
+  add-six-ten {
+    expect: to-equal( add-numbers(6,10), 16 );
+  }
+}
+```
+
+
+## Credits
+
+![Factory Code Labs](http://i.imgur.com/yV4u1.png)
+
+Sasspectataions is maintained by [Factory Code Labs](http://www.factorycodelabs.com). Huge thanks to [@jtrim](https://github.com/jtrim/) and[@InAbsentia](https://github.com/InAbsentia/) for assistance in getting Sass under control.
+
 Much thanks to the folks who built [Sassquatch](https://github.com/d-i/Sassquatch), without their inital work this wouldn't have been possiable. Many of their ideas were used in this project.
-
-
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

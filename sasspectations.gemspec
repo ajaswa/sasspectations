@@ -10,10 +10,10 @@ Gem::Specification.new do |gem|
   gem.email         = ["ajaswa@gmail.com", "jesse.trimble@factorylabs.com"]
   gem.description   = %q{Spec runner for Sass}
   gem.summary       = %q{Spec runner for Sass}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/ajaswa/sasspectations"
 
-  gem.add_dependency 'sass'
-  gem.add_dependency 'colorize'
+  gem.add_dependency 'sass', '~> 3.2.5'
+  gem.add_dependency 'colorize', '~> 0.5.8'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
