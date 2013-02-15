@@ -8,7 +8,7 @@ module Sasspectations
     end
 
     def display
-      puts "Running Scss specs:".colorize(:cyan)
+      puts "Running SCSS Specs:".colorize(:cyan)
       @spec_results.each do |result|
         print result.first
       end
