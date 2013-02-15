@@ -21,7 +21,9 @@ module Sasspectations
     end
 
     def specs_path_glob
-      Pathname.new(@root_path).join('spec', 'scss', '**', '*_spec.scss')
+      raise Sasspectations::SpecsNotFound unless File.exists?(@root_path)
+
+      Pathname.new(@root_path).join('**', '*_spec.scss')
     end
 
   end

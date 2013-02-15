@@ -9,4 +9,6 @@ require "sasspectations/output_formatter"
 
 require "sasspectations/engine" if defined?(Rails)
 
-module Sasspectations; end
+module Sasspectations
+  class SpecsNotFound < ArgumentError; end
+end
