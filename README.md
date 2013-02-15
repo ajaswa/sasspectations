@@ -20,11 +20,13 @@ Or install it yourself as:
 
 Drop you Sasspectations specs into spec/scss and run:
 
-    $ rake sasspectations:run
+    $ rake sasspectations
 
-Or you can specify a path, for example if you had your specs in examples/spec/scss:
+To a path, add a rake task, if you had your specs in examples/spec/scss:
 
-    $ rake sasspectations:run\[examples\]
+    Rake::Task['sasspectations'].invoke('examples/spec/scss')
+
+
 
 ### Writing Sasspectations Specs
 All Sasspectations specs are written in SCSS.
