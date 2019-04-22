@@ -54,9 +54,6 @@ spec-for-adding-numbers {
 
 
 ## Credits
-
-![Factory Code Labs](http://i.imgur.com/yV4u1.png)
-
-Sasspectataions is maintained by [Factory Code Labs](http://www.factorycodelabs.com). Huge thanks to [@jtrim](https://github.com/jtrim/) and[@InAbsentia](https://github.com/InAbsentia/) for assistance in getting Sass under control.
+Huge thanks to [@jtrim](https://github.com/jtrim/) and[@InAbsentia](https://github.com/InAbsentia/) for assistance in getting Sass under control.
 
 Much thanks to the folks who built [Sassquatch](https://github.com/d-i/Sassquatch), without their inital work this wouldn't have been possiable. Many of their ideas were used in this project.
